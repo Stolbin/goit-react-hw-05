@@ -1,0 +1,57 @@
+.detailsContainer {
+  position: relative;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1% 0;
+}
+.detailsBox {
+  width: 1280px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.detailsBoxInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+  margin-left: 20px;
+}
+
+.info {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.infoLinks {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  &:hover {
+    color: #b40505;
+  }
+}
+.goBackBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -5%;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 24px;
+  color: #4f4f4f;
+}
+
+.goBackBtn:hover {
+  color: rgb(193, 13, 13);
+}
+
+.detailsBoxPoster {
+  width: 300px;
+}

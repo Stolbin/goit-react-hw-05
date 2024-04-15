@@ -1,0 +1,38 @@
+.FormBox {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.formInput {
+  padding: 8px 10px;
+  width: 320px;
+  margin-right: 4px;
+  font-size: 18px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #a9a9a9;
+}
+
+.formInput:hover,
+.formInput:focus {
+  border-color: #4d4d4d;
+  box-shadow: 0 0 5px #4d4d4d;
+}
+
+.formButton {
+  font-size: 18px;
+  padding: 8px 12px;
+  border: 2px solid #a9a9a9;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formButton:hover,
+.formButton:focus {
+  border-color: #4d4d4d;
+  box-shadow: 0 0 5px #4d4d4d;
+}

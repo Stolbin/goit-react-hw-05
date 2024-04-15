@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  gap: 28px;
+  padding: 20px 40px;
+  font-size: 22px;
+  border: 2px solid #a9a9a9;
+  transition: all 0.3s;
+  > :not(.active) {
+    color: #4d4d4d;
+    &:hover {
+      color: rgb(131, 95, 53);
+    }
+  }
+}
+.active {
+  color: rgb(32, 12, 12);
+  &:hover {
+    color: rgb(131, 95, 53);
+  }
+}
+.navLink {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-weight: 28px;
+  font-style: normal;
+  text-decoration: none;
+}

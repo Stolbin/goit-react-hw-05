@@ -1,0 +1,31 @@
+.castList {
+  margin-left: 40px;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.castCard {
+  border: 3px solid rgb(226, 229, 232);
+  background-color: rgb(226, 229, 232);
+  border-radius: 4px;
+}
+.castPhoto {
+  height: 171px;
+  width: 114px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.castName {
+  display: block;
+  padding: 3% 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 114px;
+  font-size: 12px;
+  text-align: center;
+}

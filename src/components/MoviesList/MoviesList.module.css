@@ -1,0 +1,42 @@
+.moviesList {
+  margin: 1% 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.moviesList:after {
+  content: "";
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.moviesBox {
+  border: 3px solid #fff;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px #696969;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: transform 450ms linear (0, 0.11, 0.35, 2);
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 450ms linear (0, 0.11, 0.35, 2);
+  }
+}
+.moviesBoxLink {
+  text-decoration: none;
+}
+.movieListPoster {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.movieListTitle {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  padding: 5% 0;
+}

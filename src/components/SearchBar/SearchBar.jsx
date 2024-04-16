@@ -9,7 +9,9 @@ const SearchBar = ({ onSubmit }) => {
         initialValues={{ query: "" }}
         onSubmit={(values) => {
           if (!values.query.trim()) {
-            return toast.error("Can not be empty");
+            return toast.error(
+              "The field must be filled in and cannot be empty"
+            );
           }
           onSubmit(values.query);
         }}

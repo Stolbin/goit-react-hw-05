@@ -18,10 +18,12 @@
   box-shadow: 3px 3px 5px #696969;
   border-radius: 8px;
   transform: scale(1);
-  transition: transform 450ms linear (0, 0.11, 0.35, 2);
+  transition: transform cubic-bezier(0.165, 0.84, 0.44, 1)
+    cubic-bezier(0, 0.11, 0.35, 0);
   &:hover {
     transform: scale(1.02);
-    transition: transform 450ms linear (0, 0.11, 0.35, 2);
+    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1)
+      cubic-bezier(0, 0.11, 0.35, 0);
   }
 }
 .moviesBoxLink {

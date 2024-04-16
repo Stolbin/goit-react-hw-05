@@ -21,7 +21,6 @@ const MovieReviews = () => {
         const { data } = await searchMovies(`movie/${movieId}/reviews`);
 
         setReviews(data.results);
-        console.log(data.results);
       } catch (error) {
         console.log(error);
         setError(true);

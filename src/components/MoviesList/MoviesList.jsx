@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import css from "./MoviesList.module.css";
 
 function MoviesList({ movies, location }) {
-  const defaultImg = "/image/noImage.jpg";
+  const defaultImg = "../../image/noImage.jpg";
   return (
     <div>
       <ul className={css.moviesList}>

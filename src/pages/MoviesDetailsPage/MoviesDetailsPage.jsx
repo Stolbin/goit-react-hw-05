@@ -67,15 +67,25 @@ const MovieDetailsPage = () => {
               />
               <div className={css.detailsBoxInfo}>
                 <h1>{movie.title}</h1>
-                <p>User score: {Math.floor(movie.vote_average * 10)}%</p>
-
+                <div className={css.detailsBoxInfoScore}>
+                  <h3>User score:</h3>{" "}
+                  <div
+                    className={css.progressScore}
+                    style={{
+                      "--p": `${Math.floor(movie.vote_average * 10)}%`,
+                    }}
+                  >
+                    <p className={css.progressScoreText}>
+                      {Math.floor(movie.vote_average * 10)}%
+                    </p>
+                  </div>
+                </div>
                 {movie.overview && (
                   <>
                     <h3>Overwiew</h3>
                     <p>{movie.overview}</p>
                   </>
                 )}
-
                 {movie.genres && movie.genres.length > 0 && (
                   <>
                     <h3>Genres</h3>

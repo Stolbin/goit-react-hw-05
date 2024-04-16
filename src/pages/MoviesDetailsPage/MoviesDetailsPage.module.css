@@ -10,6 +10,7 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5px;
   border-bottom: 1px solid #4f4f4f;
 }
 
@@ -20,11 +21,18 @@
   width: 700px;
   margin-left: 20px;
 }
-
-.info {
-  padding: 1%;
+.detailsBoxInfoScore {
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.info {
+  padding: 1%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: start;
   gap: 40px;
 }
 .infoLinks {
@@ -47,11 +55,47 @@
   font-size: 24px;
   color: #4f4f4f;
 }
-
 .goBackBtn:hover {
   color: rgb(193, 13, 13);
 }
 
 .detailsBoxPoster {
   width: 300px;
+}
+
+/* Progress Score */
+
+.progressScore {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(red var(--p), #eee 0);
+  transition: --p 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+  cursor: progress;
+}
+@property --p {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 5%;
+}
+.progressScore::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: inherit;
+  background: rgb(255, 255, 255);
+}
+.progressScoreText {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(113, 152, 34);
 }

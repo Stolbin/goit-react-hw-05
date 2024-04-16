@@ -21,7 +21,7 @@ const MovieDetailsPage = () => {
   const location = useLocation();
 
   const backLinkRef = useRef(location.state ?? `/movies`);
-  const defaultImageImg = "/public/noFound/noImage.jpg";
+  const defaultImageImg = "/image/noImage.jpg";
 
   useEffect(() => {
     async function fetchData() {

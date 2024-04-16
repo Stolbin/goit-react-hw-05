@@ -43,6 +43,7 @@ const MovieDetailsPage = () => {
     fetchData();
   }, [movieId]);
 
+  const score = `${Math.floor(movie.vote_average * 10)}`;
   return (
     <>
       <div className={css.detailsContainer}>
@@ -72,12 +73,10 @@ const MovieDetailsPage = () => {
                   <div
                     className={css.progressScore}
                     style={{
-                      "--p": `${Math.floor(movie.vote_average * 10)}%`,
+                      "--p": `${score}%`,
                     }}
                   >
-                    <p className={css.progressScoreText}>
-                      {Math.floor(movie.vote_average * 10)}%
-                    </p>
+                    <p className={css.progressScoreText}>{score}%</p>
                   </div>
                 </div>
                 {movie.overview && (

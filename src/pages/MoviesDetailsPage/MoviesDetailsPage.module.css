@@ -69,8 +69,8 @@
   width: 60px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: conic-gradient(red var(--p), #eee 0);
-  transition: --p 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  background: conic-gradient(#32df07 0 var(--p), #e33e03);
+  transition: --p 1s cubic-bezier(0.75, 0.1, 0.75, 1);
   position: relative;
   cursor: progress;
 }
@@ -82,7 +82,7 @@
 .progressScore::before {
   content: "";
   position: absolute;
-  inset: 8px;
+  inset: 10px;
   border-radius: inherit;
   background: rgb(255, 255, 255);
 }

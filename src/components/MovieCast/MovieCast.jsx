@@ -32,7 +32,7 @@ const MovieCast = () => {
     fetchData();
   }, [movieId]);
 
-  const defaultNoPhotoImg = "../../image/noAvatar.jpg";
+  const defaultNoPhotoImg = "/src/image/noAvatar.jpg";
 
   return (
     <>

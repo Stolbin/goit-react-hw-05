@@ -69,15 +69,15 @@
   width: 60px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: conic-gradient(#32df07 0 var(--p), #e33e03);
+  background: conic-gradient(#32df07 0% var(--p), #e33e03);
   transition: --p 1s cubic-bezier(0.75, 0.1, 0.75, 1);
   position: relative;
-  cursor: progress;
+  cursor: default;
 }
 @property --p {
   syntax: "<percentage>";
   inherits: false;
-  initial-value: 5%;
+  initial-value: 0%;
 }
 .progressScore::before {
   content: "";

@@ -46,8 +46,8 @@ const MovieDetailsPage = () => {
   const score = `${Math.floor(movie.vote_average * 10)}`;
   return (
     <>
+      {isLoading && <Loader />}
       <div className={css.detailsContainer}>
-        {isLoading && <Loader />}
         <Link to={backLinkRef.current}>
           <button className={css.goBackBtn}>
             <IoArrowBackSharp />
